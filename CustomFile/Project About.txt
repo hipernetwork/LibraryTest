@@ -1,0 +1,84 @@
+# Dosya uzantısı kütüphanesi
+
+Proje Adı: CustomFile
+
+Dil: C#
+
+Runtime: .NET 8
+## Genel bilgilendirme
+Yazılımcılar oluşturulacak kütüphane sayesinde, dosyaya veri yazma ve okuma işlemlerini daha hızlı ve kolay yapabilmeleri planlanmıştır.
+## Teknik detaylar
+### -- Dosya yapısı --
+1. Magic Header
+2. Uzantı Versiyonu
+3. Rezerve alan
+4. İçerik
+### -- İstenilen yapı --
+#### Magic Header:
+```
+[8 Bytes]
+0x12, 0x00, 0x05, 0x07, 0x12, 0xA0, 0xFF, 0x00
+```
+#### Uzantı Versiyonu:
+```
+[2 Bytes]
+```
+#### Rezerve Alan:
+```
+[4 Bytes]
+```
+#### İçerik:
+```
+[n Bytes]
+```
+### -- Public Metotlar --
+```
+byte[]   Read(filePath);
+byte[]   GetFileVersion(filePath);
+bool     Write(filePath, content);
+bool     IsCustomFile(filePath);
+bool     WriteString(filePath);
+string   ReadString(filePath);
+```
+# Dosya uzantısı kütüphanesi
+
+Proje Adı: CustomFile
+
+Dil: C#
+
+Runtime: .NET 8
+## Genel bilgilendirme
+Yazılımcılar oluşturulacak kütüphane sayesinde, dosyaya veri yazma ve okuma işlemlerini daha hızlı ve kolay yapabilmeleri planlanmıştır.
+## Teknik detaylar
+### -- Dosya yapısı --
+1. Magic Header
+2. Uzantı Versiyonu
+3. Rezerve alan
+4. İçerik
+### -- İstenilen yapı --
+#### Magic Header:
+```
+[8 Bytes]
+0x12, 0x00, 0x05, 0x07, 0x12, 0xA0, 0xFF, 0x00
+```
+#### Uzantı Versiyonu:
+```
+[2 Bytes]
+```
+#### Rezerve Alan:
+```
+[4 Bytes]
+```
+#### İçerik:
+```
+[n Bytes]
+```
+### -- Public Metotlar --
+```
+byte[]   Read(filePath);
+byte[]   GetFileVersion(filePath);
+bool     Write(filePath, content);
+bool     IsCustomFile(filePath);
+bool     WriteString(filePath);
+string   ReadString(filePath);
+```
